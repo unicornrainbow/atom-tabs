@@ -1,0 +1,11 @@
+.tab-bar.wrap-tabs {
+           flex-wrap: wrap;
+            height: auto;
+
+    .tab {
+         min-width: auto;
+
+         margin-left: -1px;  // fixes xtra left border on first child on wrapped rows
+         &:first-of-type { margin-left: 0; }
+    }
+}
